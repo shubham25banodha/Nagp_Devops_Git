@@ -31,7 +31,6 @@ public class AmazonUtil {
 
             locatorProps.load(file1);
         }catch(Exception e){
-            System.out.println("Failed to read locator file");
         }
 
         return locatorProps;
