@@ -3,6 +3,6 @@ node{
         git 'https://github.com/shubham25banodha/Nagp_Devops_Git.git'
     }
     stage('Execute'){
-        sh 'mvn clean install'
+        mvn clean install
     }
 }
