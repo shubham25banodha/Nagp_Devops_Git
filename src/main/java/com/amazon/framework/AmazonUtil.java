@@ -27,8 +27,7 @@ public class AmazonUtil {
     public Properties readLocators(String locatorFileName) {
         Properties locatorProps=new Properties();
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\Locators\\";
-        try{
-            FileInputStream file = new FileInputStream(filePath+locatorFileName);
+        try(FileInputStream file = new FileInputStream(filePath+locatorFileName)){
 
             locatorProps.load(file);
         }catch(Exception e){
@@ -47,7 +46,7 @@ public class AmazonUtil {
 
             locatorProps.load(file);
         }catch(Exception e){
-            
+
         }
 
         return locatorProps;
