@@ -24,12 +24,16 @@ public class AmazonUtil {
     }
 
     // code to read lcator file
-    public Properties readLocators(String locatorFileName) throws IOException {
+    public Properties readLocators(String locatorFileName) {
         Properties locatorProps=new Properties();
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\Locators\\";
-        FileInputStream file = new FileInputStream(filePath+locatorFileName);
+        try{
+            FileInputStream file = new FileInputStream(filePath+locatorFileName);
 
-        locatorProps.load(file);
+            locatorProps.load(file);
+        }catch(Exception e){
+
+        }
 
         return locatorProps;
     }
@@ -38,9 +42,13 @@ public class AmazonUtil {
     public Properties readTestData(String testdataFileName) throws IOException {
         Properties locatorProps=new Properties();
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\";
-        FileInputStream file = new FileInputStream(filePath+testdataFileName);
+        try{
+            FileInputStream file = new FileInputStream(filePath+testdataFileName);
 
-        locatorProps.load(file);
+            locatorProps.load(file);
+        }catch(Exception e){
+            
+        }
 
         return locatorProps;
     }

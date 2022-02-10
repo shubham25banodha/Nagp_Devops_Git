@@ -1,4 +1,0 @@
-SignInIcon = //span[@id='nav-link-accountList-nav-line-1']
-EmailMobileNoTextField = //input[@name='email']
-ContinueButton = //input[@id='continue']
-IncorrectNumberAlert = //h4[@class='a-alert-heading']
