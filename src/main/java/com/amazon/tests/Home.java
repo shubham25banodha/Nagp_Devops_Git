@@ -32,15 +32,15 @@ public class Home extends HomePage {
                 search();
                 validateResultPage();
                 break;
-            case "about_us":
-                validateHomePageTitle();
-                navigateAboutUs();
-                validateResultPage();
-                break;
-            case "tab_navigation":
-                validateHomePageTitle();
-                navigateTab();
-                break;
+//            case "about_us":
+//                validateHomePageTitle();
+//                navigateAboutUs();
+//                validateResultPage();
+//                break;
+//            case "tab_navigation":
+//                validateHomePageTitle();
+//                navigateTab();
+//                break;
         }
     }
 
