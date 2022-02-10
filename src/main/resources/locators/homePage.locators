@@ -1,0 +1,6 @@
+SearchBox =//input[@id='twotabsearchtextbox']
+SearchButton = //input[@id='nav-search-submit-button']
+AboutUs = //a[@class='nav_a']
+AboutUsSocialLink = //a[@class='SocialLink']
+Tab = //a[@data-csa-c-slot-id='nav_cs_@@@@']
+AmazonPrimeTab = //a[@data-csa-c-slot-id='nav-link-prime']

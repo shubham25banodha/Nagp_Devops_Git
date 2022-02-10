@@ -1,0 +1,4 @@
+HamburgerMenu = //a[@id='nav-hamburger-menu']
+HMItems = //ul[@class='hmenu hmenu-visible']/li
+HMTrendingItem = //ul[@class='hmenu hmenu-visible']/li[2]
+SearchBox =//input[@id='twotabsearchtextbox']

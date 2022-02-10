@@ -1,0 +1,5 @@
+SelectYourAddress = //span[@class='nav-line-2 nav-progressive-content']
+AddressPopoverHeading = //h4[@class='a-popover-header-content']
+PinCodeTextField = //input[@class='GLUX_Full_Width a-declarative']
+SubmitPincode = //input[@aria-labelledby='GLUXZipUpdate-announce']
+WrongPincodeAllert = //div[@class='a-box-inner a-alert-container']/div

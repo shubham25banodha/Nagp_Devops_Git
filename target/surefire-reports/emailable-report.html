@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">AmazonRegressionSuite</th></tr>
+<tr><td><a href="#t0">AmazonRegression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">106,425</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AmazonRegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AmazonRegression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.amazon.tests.Home</td><td><a href="#m0">testHome</a></td><td rowspan="2">1644473748931</td><td rowspan="2">13273</td></tr><tr class="failedeven"><td><a href="#m1">testHome</a></td></tr><tr><th colspan="4">AmazonRegression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.tests.HamburgerMenu</td><td><a href="#m2">testHamburgerMenu</a></td><td rowspan="1">1644473790734</td><td rowspan="1">5679</td></tr><tr class="passedodd"><td rowspan="1">com.amazon.tests.Home</td><td><a href="#m3">testHome</a></td><td rowspan="1">1644473724565</td><td rowspan="1">6453</td></tr></tbody>
+</table>
+<h2>AmazonRegression</h2><h3 id="m0">com.amazon.tests.Home#testHome</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tab_Navigation</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Amazon Fashion: Clothing, Footwear and Accessories online for Men, Women and Kids] but found [Help - Amazon Customer Service]
+	at com.amazon.framework.Base.validatePageTitle(Base.java:71)
+	at com.amazon.ui.HomePage.navigateTab(HomePage.java:92)
+	at com.amazon.tests.Home.testHome(Home.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.amazon.tests.Home#testHome</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>About_Us</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Amazon India transforms small business in India1] but found [About Amazon India | Homepage - About Amazon India]
+	at com.amazon.framework.Base.validatePageTitle(Base.java:71)
+	at com.amazon.ui.HomePage.validateResultPage(HomePage.java:61)
+	at com.amazon.tests.Home.testHome(Home.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.amazon.tests.HamburgerMenu#testHamburgerMenu</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Trending_Menu</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.amazon.tests.Home#testHome</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Search</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

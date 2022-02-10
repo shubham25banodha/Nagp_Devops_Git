@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AmazonRegressionSuite" verbose="1" >
+    <listeners>
+        <listener class-name="com.amazon.listener.AmazonListener"/>
+    </listeners>
+    <test name="AmazonRegression" >
+        <classes>
+            <class name="com.amazon.tests.Home" />
+            <class name="com.amazon.tests.Address" />
+            <class name="com.amazon.tests.SignIn" />
+            <class name="com.amazon.tests.HamburgerMenu" />
+        </classes>
+    </test>
+</suite>
