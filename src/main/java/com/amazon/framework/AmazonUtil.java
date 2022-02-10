@@ -46,7 +46,6 @@ public class AmazonUtil {
 
             locatorProps.load(file2);
         }catch(Exception e){
-            System.out.println("Failed to read test data file");
         }
 
         return locatorProps;
