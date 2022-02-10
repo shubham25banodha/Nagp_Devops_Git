@@ -27,11 +27,11 @@ public class AmazonUtil {
     public Properties readLocators(String locatorFileName) {
         Properties locatorProps=new Properties();
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\Locators\\";
-        try(FileInputStream file = new FileInputStream(filePath+locatorFileName)){
+        try(FileInputStream file1 = new FileInputStream(filePath+locatorFileName)){
 
-            locatorProps.load(file);
+            locatorProps.load(file1);
         }catch(Exception e){
-
+            System.out.println("Failed to read locator file");
         }
 
         return locatorProps;
@@ -41,12 +41,12 @@ public class AmazonUtil {
     public Properties readTestData(String testdataFileName) throws IOException {
         Properties locatorProps=new Properties();
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\";
-        try{
-            FileInputStream file = new FileInputStream(filePath+testdataFileName);
+        try(FileInputStream file2 = new FileInputStream(filePath+testdataFileName)){
 
-            locatorProps.load(file);
+
+            locatorProps.load(file2);
         }catch(Exception e){
-
+            System.out.println("Failed to read test data file");
         }
 
         return locatorProps;
