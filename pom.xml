@@ -13,7 +13,7 @@
             <configuration>
                 <suiteXmlFiles>
                     <!--Pass your xml name as command line argument -->
-                    <suiteXmlFile>${project.build.directory}/classes/suites/${testngXML}</suiteXmlFile>
+                    <suiteXmlFile>${project.build.directory}/classes/suites/AmazonSmoke.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>
